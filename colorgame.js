@@ -41,7 +41,7 @@ hardBtn.addEventListener("click", function(){
 
 resetButton.addEventListener("click", function(){
 	//generate all new colors
-	colors = generateRandomColors(6);
+	colors = generateRandomColors(numSquares);
 	//pick a new random color from array
 	pickedColor = pickColor();
 	//change colorDisplay to match picked color
@@ -50,7 +50,7 @@ resetButton.addEventListener("click", function(){
 	for(var i = 0; i < squares.length; i ++){
 		squares[i].style.backgroundColor = colors[i];
 	}
-	h1.style.backgroundColor = "#232323";
+	h1.style.backgroundColor = "steelblue";
 });
 
 colorDisplay.textContent = pickedColor;
